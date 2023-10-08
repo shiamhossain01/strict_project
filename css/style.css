@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+header{
+    padding: 20px 0;
+
+}
+.container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    width: 14%;
+
+}
+.logo img{
+    width: 100%;
+
+}
+nav{
+    width: 40%;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+nav ul li{
+    list-style: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3950;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #28a8f5;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+/* banner section start */
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.banner_contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.banner_contant h1{
+    font-size: 120px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+.banner_contant span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #28a8f5;
+
+}
+.banner_contant p{
+    font-size: 20px;
+    color: #ffffff;
+    padding: 20px 0 50px;
+
+}
+.banner_contant a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #28a8f5;
+    padding: 15px 30px;
+    transition: .5s;
+}
+.banner_contant a:hover{
+    background: #28a8f5;
+}
+.banner i{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-80%,50%);
+    font-size: 20px;
+    color: #ffffff;
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 85%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+/* banner section end */
+
+
+/* simple section start */
+.simple{
+    padding: 60px 0;
+    background: #f6f9f9;
+
+}
+.container1{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.simple_contant{
+    text-align: center;
+
+}
+.simple_contant h1{
+    font-size: 40px;
+    color: #2d3950;
+
+}
+.simple_contant p{
+    font-size: 20px;
+    color: #999999;
+    line-height: 25px;
+    padding: 20px 0 60px;
+}
+/* simple section end */
+
+
+
+/* icon section start */
+.icon{
+    padding: 60px 0;
+}
+.icon_contant{
+    width: 30%;
+    text-align: center;
+}
+.icon_img{
+    width: 80px;
+    height: 80px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-        
+    editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+,     
+    FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.icon_contant h3{
+    font-size: 22px;
+    color: #2d3950;
+    padding: 20px 0;
+}
+.icon_contant p{
+    font-size: 22px;
+    color: #999999;
+}
+/* icon section end */
+
+
+
+/* service section start */
+.service{
+    text-align: center;
+    padding: 60px 0;
+    background: #f6f9f9;
+
+}
+.service h1{
+    font-size: 41px;
+    color: #2d3950;
+}
+.service p{
+    font-size: 16px;
+    color: #909090;
+    padding: 20px 0 40px;
+}
+.service_contant{
+    width: 32%;
+    /* border: 1px solid red; */
+    margin: 7px 0;
+    position: relative;
+
+}
+.service_img{
+    
+
+}
+.service_contant img{
+    width: 100%;
+}
+.service_contant::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #48baff;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.service_contant:hover::after{
+    opacity: .5;
+    /* width: 100%; */
+}
+
+/* service section end */
